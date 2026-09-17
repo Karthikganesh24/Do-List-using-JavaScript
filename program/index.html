@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <div class="task-card">
+            <div class="title-row">
+                <span class="bolt">⚡</span>
+                <h1>Task Manager</h1>
+                <span class="bolt">⚡</span>
+            </div>
+
+            <p class="subtitle">Organize your daily activities</p>
+
+            <div class="input-row">
+                <input id="taskInput" type="text" placeholder="Add a new task" onkeypress="handleKeyPress(event)">
+                <button class="add-btn" onclick="addTask()">+</button>
+            </div>
+
+            <div class="search-row">
+                <input type="text" placeholder="Search tasks...">
+            </div>
+
+            <div class="filter-row">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Done</button>
+                <button class="filter-btn">Pending</button>
+            </div>
+
+            <div class="task-summary">
+                <span>Total Tasks: <strong id="totalTasks">0</strong></span>
+                <button class="clear-btn" onclick="clearAll()">Clear</button>
+            </div>
+        </div>
+
+        <footer class="page-footer">
+            <p>Name: Karthik ganesh G</p>
+            <p>Regist Number: 212223223003</p>
+            <p>© 2026 Task Manager</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
